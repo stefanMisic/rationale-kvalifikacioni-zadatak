@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Containers.css';
 
-const Header = () => (
+const BodyContainer = () => (
   <div className="Body">
     <div className="LinearGradient">
     </div>
@@ -13,4 +13,4 @@ const Header = () => (
   </div>
 );
 
-export default Header;
+export default BodyContainer;

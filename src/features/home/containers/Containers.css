@@ -1,7 +1,7 @@
 .Body {
   display: flex;
   flex-direction: row;
-  height: 95vh;
+  height: 100vh;
 }
 
 .DataContainer {
@@ -11,10 +11,10 @@
 }
 
 .Header {
-  background: linear-gradient(#fff, #e6e6e6);
+  background: #e6e6e6;
   display: flex;
   flex-direction: row;
-  height: 5vh;
+  height: 40px;
 }
 
 .HomeContainer {
@@ -26,4 +26,35 @@
   background: linear-gradient(#00abb3, #10497e);
   display: flex;
   flex-grow: 1;
+}
+
+.Title {
+  color: #666666 !important;
+}
+
+.TitleContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .Title {
+    font-size: 0.8em !important;
+    margin-left: 5px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Title {
+    font-size: 0.8em !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Title {
+    margin-left: 150px !important;
+  }
 }
