@@ -1,11 +1,41 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
+import { connect } from 'react-redux';
+import { Button, Header } from 'semantic-ui-react';
 
-const HomeContainer = () => (
+import { testRedux as testReduxAction } from '../modules';
+
+const HomeContainer = ({ testData, testRedux }) => (
   <div>
-    <h1>Hello, React!</h1>
-    <Button primary>Hello, Semantic UI!</Button>
+    <Header
+      as='h1'
+      color='red'
+    >
+      Hello, React!
+    </Header>
+    <Header
+      as='h2'
+      color='green'
+    >
+      Hello, Redux: {testData}!
+    </Header>
+    <Button
+      onClick={() => testRedux('success')}
+      primary
+    >
+      Hello, Semantic UI! Test Redux!
+    </Button>
   </div>
 );
 
-export default HomeContainer;
+const mapDispatchToProps = {
+  testRedux: testReduxAction,
+};
+
+const mapStateToProps = ({ home }) => ({
+  testData: home.testData
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(HomeContainer);
