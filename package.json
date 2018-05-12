@@ -1,0 +1,9 @@
+{
+  "name": "rationale-kvalifikacioni-zadatak",
+  "version": "1.0.0",
+  "description": "Kvalifikacioni zadatak za poziciju Frontend Web Developera",
+  "main": "index.js",
+  "repository": "https://github.com/stefanMisic/rationale-kvalifikacioni-zadatak.git",
+  "author": "Stefan Misic <stefan.misic.491@gmail.com>",
+  "license": "MIT"
+}
