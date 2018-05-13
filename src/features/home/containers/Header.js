@@ -2,12 +2,11 @@ import React from 'react';
 import { Divider, Header, Icon } from 'semantic-ui-react';
 
 import './Containers.css';
-import { IconButton, UserButton, VerticalDivider } from '../ui';
+import { HeaderIconButton, UserButton, VerticalDivider } from '../ui';
 
 const HeaderContainer = () => (
   <div className="Header">
-    <IconButton
-      backgroundColor="#e6e6e6"
+    <HeaderIconButton
       name="home"
       onClick={() => console.log("HOME BUTTON")}
     />
@@ -20,14 +19,12 @@ const HeaderContainer = () => (
         Demo App
       </Header>
     </div>
-    <IconButton
-      backgroundColor="#e6e6e6"
+    <HeaderIconButton
       name="cloud upload"
       onClick={() => console.log("CLOUD BUTTON")}
     />
-    <VerticalDivider />
-    <IconButton
-      backgroundColor="#e6e6e6"
+    <VerticalDivider/>
+    <HeaderIconButton
       name="question circle outline"
       onClick={() => console.log("QUESTION BUTTON")}
     />

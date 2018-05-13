@@ -1,13 +1,44 @@
 .Body {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 97vh;
 }
 
 .DataContainer {
   background: #e6e6e6;
   display: flex;
   flex-grow: 5;
+  position: relative;
+}
+
+.Footer {
+  background: #3b4549;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  position: absolute;
+  width: 100%;
+}
+
+.FooterLeft {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.FooterRight {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .Header {
@@ -48,6 +79,19 @@
 }
 
 @media screen and (max-width: 425px) {
+  .Footer {
+    flex-direction: column;
+    height: 120px;
+  }
+  .FooterLeft {
+    height: 40px;
+  }
+  .FooterRight {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 80px;
+    justify-content: center;
+  }
   .Title {
     font-size: 0.8em !important;
   }

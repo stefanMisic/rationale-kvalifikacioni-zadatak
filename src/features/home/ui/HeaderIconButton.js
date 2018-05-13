@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button, Icon } from 'semantic-ui-react';
 
-const IconButton = ({ backgroundColor, name, onClick }) => (
+const HeaderIconButton = ({ name, onClick }) => (
   <Button
-    className="IconButton"
+    className="HeaderIconButton"
     icon
     onClick={() => onClick()}
   >
@@ -12,11 +12,11 @@ const IconButton = ({ backgroundColor, name, onClick }) => (
       size="large"
     />
     <style>{`
-      .IconButton {
-        background-color: ${backgroundColor} !important;
+      .HeaderIconButton {
+        background-color: #e6e6e6 !important;
       }
     `}</style>
   </Button>
 );
 
-export default IconButton;
+export default HeaderIconButton;
