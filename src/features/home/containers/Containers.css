@@ -1,13 +1,13 @@
 .Body {
   display: flex;
   flex-direction: row;
-  height: 97vh;
+  height: 96vh;
 }
 
 .DataContainer {
   background: #e6e6e6;
   display: flex;
-  flex-grow: 5;
+  width: 70%;
   position: relative;
 }
 
@@ -55,7 +55,18 @@
 
 .LinearGradient {
   background: linear-gradient(#00abb3, #10497e);
+  width: 15%;
+}
+
+.Purchase {
   display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.Purchases {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
@@ -87,13 +98,19 @@
     height: 40px;
   }
   .FooterRight {
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     height: 80px;
     justify-content: center;
   }
   .Title {
     font-size: 0.8em !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .LinearGradient {
+    display: none;
   }
 }
 
