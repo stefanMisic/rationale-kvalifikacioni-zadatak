@@ -1,13 +1,13 @@
 import React from 'react';
 import { Header } from 'semantic-ui-react';
 
-const PurchaseDescription = ({ description, title }) => (
+const PurchaseDescription = ({ description }) => (
   <div className="PurchaseDescriptionContainer">
     <Header
       as="h4"
       className="PurchaseDescriptionTitle"
     >
-      {title}
+      {description.length > 0 ? 'Purchase order' : 'Select a purchase'}
     </Header>
     <Header
       as="h4"
@@ -22,13 +22,18 @@ const PurchaseDescription = ({ description, title }) => (
         text-align: justify;
       }
       .PurchaseDescriptionContainer {
-        background: #d5f2f5;
+        background: ${description.length > 0 ? "#d5f2f5" : "#ffffff"};
         height: 100%;
         padding: 30px;
         padding-bottom: 100px;
       }
       .PurchaseDescriptionTitle {
         color: #666666 !important;
+      }
+      @media screen and (max-width: 425px) {
+        .PurchaseDescriptionContainer {
+          border-top: 1px solid #e6e6e6;
+        }
       }
     `}</style>
   </div>

@@ -25,6 +25,12 @@ const PurchaseTitle = ({ title }) => (
         height: 40px;
         margin-top: 2px;
       }
+      @media screen and (max-width: 425px) {
+        .PurchaseTitleContainer {
+          border-top: 1px solid #e6e6e6;
+          display: ${title.length > 0 ? "normal" : "none"}
+        }
+      }
     `}</style>
   </div>
   
