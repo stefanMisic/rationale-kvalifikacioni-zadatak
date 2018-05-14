@@ -1,13 +1,14 @@
 .Body {
   display: flex;
   flex-direction: row;
-  height: 96vh;
+  height: 97vh;
 }
 
 .DataContainer {
   background: #e6e6e6;
   display: flex;
-  width: 70%;
+  flex-direction: row;
+  width: 80%;
   position: relative;
 }
 
@@ -55,19 +56,24 @@
 
 .LinearGradient {
   background: linear-gradient(#00abb3, #10497e);
-  width: 15%;
+  width: 10%;
 }
 
 .Purchase {
   display: flex;
   flex-direction: column;
-  flex-grow: 3;
+  width: 75%;
+}
+
+.PurchaseCards {
+  flex: 1;
+  overflow: scroll;
 }
 
 .Purchases {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  width: 25%;
 }
 
 .Title {
@@ -90,25 +96,51 @@
 }
 
 @media screen and (max-width: 425px) {
+  .DataContainer {
+    flex-direction: column;
+  }
+
   .Footer {
+    bottom: -260px;
     flex-direction: column;
     height: 120px;
   }
+
   .FooterLeft {
     height: 40px;
   }
+
   .FooterRight {
     align-items: center;
     flex-wrap: wrap;
     height: 80px;
     justify-content: center;
   }
+
+  .Purchase {
+    width: 100%;
+  }
+  
+  .PurchaseCards {
+    height: 500px;
+    overflow-x: hidden;
+  }
+  
+  .Purchases {
+    height: 580px;
+    width: 100%;
+  }
+
   .Title {
     font-size: 0.8em !important;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .DataContainer {
+    width: 100%;
+  }
+
   .LinearGradient {
     display: none;
   }
