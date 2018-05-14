@@ -1,0 +1,153 @@
+.Body {
+  display: flex;
+  flex-direction: row;
+  height: 97vh;
+}
+
+.DataContainer {
+  background: #e6e6e6;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  position: relative;
+}
+
+.Footer {
+  background: #3b4549;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  position: absolute;
+  width: 100%;
+}
+
+.FooterLeft {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.FooterRight {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.Header {
+  background: #e6e6e6;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+.HomeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.LinearGradient {
+  background: linear-gradient(#00abb3, #10497e);
+  width: 10%;
+}
+
+.Purchase {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.PurchaseCards {
+  flex: 1;
+  overflow: scroll;
+}
+
+.Purchases {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.Title {
+  color: #666666 !important;
+}
+
+.TitleContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .Title {
+    font-size: 0.8em !important;
+    margin-left: 5px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .DataContainer {
+    flex-direction: column;
+  }
+
+  .Footer {
+    bottom: -260px;
+    flex-direction: column;
+    height: 120px;
+  }
+
+  .FooterLeft {
+    height: 40px;
+  }
+
+  .FooterRight {
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80px;
+    justify-content: center;
+  }
+
+  .Purchase {
+    width: 100%;
+  }
+  
+  .PurchaseCards {
+    height: 500px;
+    overflow-x: hidden;
+  }
+  
+  .Purchases {
+    height: 580px;
+    width: 100%;
+  }
+
+  .Title {
+    font-size: 0.8em !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .DataContainer {
+    width: 100%;
+  }
+
+  .LinearGradient {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Title {
+    margin-left: 150px !important;
+  }
+}
