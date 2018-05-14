@@ -101,7 +101,7 @@
   }
 
   .Footer {
-    bottom: -260px;
+    bottom: -275px;
     flex-direction: column;
     height: 120px;
   }
@@ -122,7 +122,6 @@
   }
   
   .PurchaseCards {
-    height: 500px;
     overflow-x: hidden;
   }
   

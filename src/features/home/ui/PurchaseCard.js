@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, Header } from 'semantic-ui-react';
 
-const PurchaseCard = ({ select, purchase }) => (
+const PurchaseCard = ({ isActive, purchase, select }) => (
   <Button
-    className="PurchaseCardButton"
-    onClick={() => select()}
+    className={isActive === purchase.id ? "PurchaseCardButtonActive" : "PurchaseCardButton"}
+    onClick={() => select(purchase)}
   >
     <div className="PurchaseCardContent">
       {purchase.reservedBy !== "None" &&
@@ -37,7 +37,15 @@ const PurchaseCard = ({ select, purchase }) => (
       </div>
     <style>{`
       .PurchaseCardButton {
-        background-color: #ffffff !important;
+        background: #ffffff !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        margin-bottom: 2px !important;
+        padding: 0 !important;
+        width: 100%;
+      }
+      .PurchaseCardButtonActive {
+        background: #d5f2f5 !important;
         border-radius: 0 !important;
         margin: 0 !important;
         margin-bottom: 2px !important;

@@ -1,10 +1,10 @@
-export const TEST_REDUX = '@home/TEST_REDUX';
+export const SELECT_PURCHASE = '@home/SELECT_PURCHASE';
 
-export function testRedux(testData) {
+export function selectPurchase(purchase) {
   return {
-    type: TEST_REDUX,
+    type: SELECT_PURCHASE,
     payload: {
-      testData
+      purchase
     }
   };
 }
